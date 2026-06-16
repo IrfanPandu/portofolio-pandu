@@ -1,5 +1,12 @@
 import { useEffect, useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 import './Contact.css';
+
+// ─── EmailJS Config ───────────────────────────────────────────────
+const EMAILJS_SERVICE_ID  = 'service_arn6wt7';
+const EMAILJS_TEMPLATE_ID = 'template_aouejpm'; // ganti dengan Template ID kamu
+const EMAILJS_PUBLIC_KEY  = 'gXMnTqZmAgZ2xbLdv';  // ganti dengan Public Key kamu
+// ─────────────────────────────────────────────────────────────────
 
 const contactInfo = [
   {
@@ -55,13 +62,31 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setSending(true);
-    // Simulate form submission
-    setTimeout(() => {
-      setSending(false);
-      setStatus('success');
-      setForm({ name: '', email: '', subject: '', message: '' });
-      setTimeout(() => setStatus(null), 5000);
-    }, 1500);
+    setStatus(null);
+
+    emailjs
+      .send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        {
+          name:    form.name,
+          email:   form.email,
+          subject: form.subject,
+          message: form.message,
+        },
+        EMAILJS_PUBLIC_KEY
+      )
+      .then(() => {
+        setSending(false);
+        setStatus('success');
+        setForm({ name: '', email: '', subject: '', message: '' });
+        setTimeout(() => setStatus(null), 5000);
+      })
+      .catch(() => {
+        setSending(false);
+        setStatus('error');
+        setTimeout(() => setStatus(null), 5000);
+      });
   };
 
   return (
@@ -170,6 +195,11 @@ export default function Contact() {
               {status === 'success' && (
                 <div className="form-alert form-alert-success">
                   <span>✅</span> Message sent! I'll get back to you soon.
+                </div>
+              )}
+              {status === 'error' && (
+                <div className="form-alert form-alert-error">
+                  <span>❌</span> Oops! Something went wrong. Please try again.
                 </div>
               )}
 
