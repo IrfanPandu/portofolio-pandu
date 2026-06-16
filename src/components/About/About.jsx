@@ -51,7 +51,7 @@ export default function About() {
         <p className="section-eyebrow reveal">Get To Know Me</p>
         <h2 className="section-title reveal">About Me</h2>
         <p className="section-subtitle reveal">
-          A developer with a love for crafting pixel-perfect interfaces and seamless user experiences.
+         Passionate about building scalable web applications with clean code and thoughtful user experiences.
         </p>
 
         <div className="about-grid">
