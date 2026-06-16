@@ -46,7 +46,7 @@ export default function Navbar() {
       <div className="navbar-container">
         <a href="#home" className="navbar-logo" onClick={(e) => handleLinkClick(e, '#home')}>
           <span className="logo-bracket">&lt;</span>
-          <span className="logo-name">Dev</span>
+          <span className="logo-name">Irfan Pandu</span>
           <span className="logo-bracket">/&gt;</span>
         </a>
 
