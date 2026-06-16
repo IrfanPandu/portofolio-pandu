@@ -39,10 +39,10 @@ export default function Footer() {
           <div className="footer-links-group">
             <h4>Connect</h4>
             <ul>
-              <li><a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a></li>
-              <li><a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a></li>
-              <li><a href="https://twitter.com" target="_blank" rel="noreferrer">Twitter</a></li>
-              <li><a href="mailto:alex@example.com">Email</a></li>
+              <li><a href="https://github.com/IrfanPandu" target="_blank" rel="noreferrer">GitHub</a></li>
+              <li><a href="https://www.linkedin.com/in/irfan-pandu-pratama/" target="_blank" rel="noreferrer">LinkedIn</a></li>
+              <li><a href="https://twitter.com" target="_blank" rel="noreferrer">X</a></li>
+              <li><a href="mailto:irfanpanduutama@gmail.com">Email</a></li>
             </ul>
           </div>
         </div>

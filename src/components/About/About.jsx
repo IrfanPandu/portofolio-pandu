@@ -69,14 +69,14 @@ export default function About() {
                 <span className="info-icon">📍</span>
                 <div>
                   <p className="info-label">Location</p>
-                  <p className="info-value">San Francisco, CA</p>
+                  <p className="info-value">Malang, East Java</p>
                 </div>
               </div>
               <div className="info-card">
                 <span className="info-icon">🎓</span>
                 <div>
                   <p className="info-label">Education</p>
-                  <p className="info-value">B.S. Computer Science</p>
+                  <p className="info-value">Informatics Engineering</p>
                 </div>
               </div>
               <div className="info-card">

@@ -5,25 +5,25 @@ const contactInfo = [
   {
     icon: '📧',
     label: 'Email',
-    value: 'alex@example.com',
-    href: 'mailto:alex@example.com',
+    value: 'irfanpanduutama@gmail.com',
+    href: 'mailto:irfanpanduutama@gmail.com',
   },
   {
     icon: '💼',
     label: 'LinkedIn',
-    value: 'linkedin.com/in/alexchen',
-    href: 'https://linkedin.com',
+    value: 'linkedin.com/in/Irfan Pandu Pratama ',
+    href: 'https://www.linkedin.com/in/irfan-pandu-pratama/',
   },
   {
     icon: '🐙',
     label: 'GitHub',
-    value: 'github.com/alexchen',
-    href: 'https://github.com',
+    value: 'github.com/irfanPandu',
+    href: 'https://github.com/IrfanPandu',
   },
   {
     icon: '📍',
     label: 'Location',
-    value: 'San Francisco, CA',
+    value: 'Malang, East Java',
     href: null,
   },
 ];
