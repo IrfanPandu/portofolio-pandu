@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import './About.css';
+import profilePhoto from '../../assets/foto jas pandu.png';
 
 export default function About() {
   const sectionRef = useRef(null);
@@ -23,25 +24,18 @@ export default function About() {
 
   const experiences = [
     {
-      role: 'Senior Frontend Developer',
-      company: 'TechCorp Inc.',
+      role: 'Network Engineering',
+      company: 'SMKN 1 Kediri',
+      period: '2021 – 2024',
+      desc: 'I studied at SMKN 1 Kediri majoring in computer network engineering ',
+      color: '#3aadf9ff',
+    },
+    {
+      role: 'Fullstack Developer',
+      company: 'Freelance',
       period: '2023 – Present',
-      desc: 'Led the frontend architecture for a SaaS platform serving 50k+ users.',
+      desc: 'I have experience in a freelance fullstack developer',
       color: '#6366f1',
-    },
-    {
-      role: 'Frontend Developer',
-      company: 'StartupXYZ',
-      period: '2022 – 2023',
-      desc: 'Built responsive web apps with React and integrated RESTful APIs.',
-      color: '#06b6d4',
-    },
-    {
-      role: 'UI Developer Intern',
-      company: 'DigitalAgency',
-      period: '2021 – 2022',
-      desc: 'Designed and developed landing pages and e-commerce frontends.',
-      color: '#f59e0b',
     },
   ];
 
@@ -59,7 +53,7 @@ export default function About() {
           <div className="about-left reveal">
             <div className="about-image-wrapper">
               <div className="about-image">
-                <span className="about-avatar">👨‍💻</span>
+                <img src={profilePhoto} alt="Profile" className="about-photo" />
               </div>
               <div className="about-image-bg"></div>
             </div>

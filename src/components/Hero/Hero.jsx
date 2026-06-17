@@ -73,7 +73,7 @@ export default function Hero() {
           </div>
 
           <p className="hero-desc">
-            A passionate full-stack developer crafting beautiful, performant, and accessible web experiences.
+            A passionate full-stack developer crafting simple design, performant, and accessible web experiences.
             I turn ideas into reality with clean code and creative design.
           </p>
 

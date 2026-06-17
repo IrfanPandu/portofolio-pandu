@@ -15,7 +15,7 @@ export default function Footer() {
           <div className="footer-brand">
             <a href="#home" className="footer-logo" onClick={(e) => handleScroll(e, '#home')}>
               <span className="logo-bracket">&lt;</span>
-              <span className="logo-name">Dev</span>
+              <span className="logo-name">Irfan Pandu</span>
               <span className="logo-bracket">/&gt;</span>
             </a>
             <p className="footer-tagline">
@@ -50,8 +50,7 @@ export default function Footer() {
 
       <div className="footer-bottom">
         <div className="container footer-bottom-inner">
-          <p>© {year} Alex Chen. All rights reserved.</p>
-          <p>Built with <span className="heart">❤️</span> using React & Vite</p>
+          <p>© {year} Irfan Pandu. All rights reserved.</p>
         </div>
       </div>
     </footer>
