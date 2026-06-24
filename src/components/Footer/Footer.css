@@ -3,7 +3,7 @@
 }
 
 .footer-top {
-  background: var(--bg-card2);
+  background: var(--bg-card);
   padding: 64px 0 48px;
 }
 
@@ -20,35 +20,29 @@
 }
 
 .footer-logo {
-  font-size: 1.5rem;
-  font-weight: 800;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
   text-decoration: none;
+  color: var(--text);
   display: inline-flex;
   align-items: center;
-  gap: 2px;
 }
 
-.footer-logo .logo-name {
-  background: var(--gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.footer-logo .logo-bracket {
-  color: var(--primary-light);
+.footer-logo .logo-dot {
+  color: var(--accent);
 }
 
 .footer-tagline {
   color: var(--text-muted);
-  font-size: 0.9rem;
-  line-height: 1.7;
+  font-size: 0.88rem;
+  line-height: 1.6;
   max-width: 300px;
 }
 
 .footer-links-group h4 {
-  font-size: 0.85rem;
-  font-weight: 700;
+  font-size: 0.72rem;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   color: var(--text-muted);
@@ -65,34 +59,20 @@
 .footer-links-group a {
   color: var(--text-muted);
   text-decoration: none;
-  font-size: 0.9rem;
-  transition: color 0.3s ease;
+  font-size: 0.88rem;
+  transition: color 0.2s ease;
   display: flex;
   align-items: center;
-  gap: 6px;
 }
 
 .footer-links-group a:hover {
-  color: var(--primary-light);
-}
-
-.footer-links-group a::before {
-  content: '›';
-  color: var(--primary);
-  opacity: 0;
-  transform: translateX(-4px);
-  transition: all 0.3s ease;
-}
-
-.footer-links-group a:hover::before {
-  opacity: 1;
-  transform: translateX(0);
+  color: #ffffff;
 }
 
 /* Bottom bar */
 .footer-bottom {
   background: var(--bg);
-  padding: 20px 0;
+  padding: 24px 0;
   border-top: 1px solid var(--border);
 }
 
@@ -105,24 +85,15 @@
 }
 
 .footer-bottom p {
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   color: var(--text-muted);
-}
-
-.heart {
-  display: inline-block;
-  animation: heartbeat 1.5s ease-in-out infinite;
-}
-
-@keyframes heartbeat {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.2); }
 }
 
 /* Responsive */
 @media (max-width: 768px) {
   .footer-top-inner {
     grid-template-columns: 1fr 1fr;
+    gap: 36px;
   }
 
   .footer-brand {

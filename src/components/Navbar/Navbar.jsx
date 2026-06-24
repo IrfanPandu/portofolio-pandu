@@ -45,9 +45,7 @@ export default function Navbar() {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
         <a href="#home" className="navbar-logo" onClick={(e) => handleLinkClick(e, '#home')}>
-          <span className="logo-bracket">&lt;</span>
-          <span className="logo-name">Irfan Pandu</span>
-          <span className="logo-bracket">/&gt;</span>
+          irfanpandu<span className="logo-dot">.</span>
         </a>
 
         <ul className={`navbar-links ${menuOpen ? 'open' : ''}`}>

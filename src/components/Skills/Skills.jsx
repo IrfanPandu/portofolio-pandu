@@ -4,7 +4,7 @@ import './Skills.css';
 const skillCategories = [
   {
     title: 'Frontend',
-    icon: '🎨',
+    icon: 'FE',
     color: '#6366f1',
     skills: [
       { name: 'React.js', level: 92 },
@@ -16,7 +16,7 @@ const skillCategories = [
   },
   {
     title: 'Backend',
-    icon: '⚙️',
+    icon: 'BE',
     color: '#06b6d4',
     skills: [
       { name: 'Node.js', level: 80 },
@@ -28,7 +28,7 @@ const skillCategories = [
   },
   {
     title: 'Tools & Other',
-    icon: '🛠️',
+    icon: 'OT',
     color: '#f59e0b',
     skills: [
       { name: 'Git & GitHub', level: 90 },
@@ -41,18 +41,18 @@ const skillCategories = [
 ];
 
 const techStack = [
-  { name: 'React', emoji: '⚛️' },
-  { name: 'TypeScript', emoji: '💙' },
-  { name: 'Next.js', emoji: '▲' },
-  { name: 'Node.js', emoji: '🟢' },
-  { name: 'Tailwind', emoji: '🌊' },
-  { name: 'GraphQL', emoji: '🔺' },
-  { name: 'PostgreSQL', emoji: '🐘' },
-  { name: 'Docker', emoji: '🐳' },
-  { name: 'Figma', emoji: '🎨' },
-  { name: 'Git', emoji: '🌿' },
-  { name: 'Vite', emoji: '⚡' },
-  { name: 'Jest', emoji: '🃏' },
+  { name: 'React' },
+  { name: 'TypeScript' },
+  { name: 'Next.js' },
+  { name: 'Node.js' },
+  { name: 'Tailwind' },
+  { name: 'GraphQL' },
+  { name: 'PostgreSQL' },
+  { name: 'Docker' },
+  { name: 'Figma' },
+  { name: 'Git' },
+  { name: 'Vite' },
+  { name: 'Jest' },
 ];
 
 export default function Skills() {
@@ -128,7 +128,6 @@ export default function Skills() {
             <div className="marquee-track">
               {[...techStack, ...techStack].map((tech, i) => (
                 <div className="marquee-item" key={i}>
-                  <span className="marquee-emoji">{tech.emoji}</span>
                   <span className="marquee-name">{tech.name}</span>
                 </div>
               ))}

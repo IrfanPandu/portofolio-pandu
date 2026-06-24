@@ -60,21 +60,27 @@ export default function About() {
 
             <div className="about-info-cards">
               <div className="info-card">
-                <span className="info-icon">📍</span>
+                <span className="info-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </span>
                 <div>
                   <p className="info-label">Location</p>
                   <p className="info-value">Malang, East Java</p>
                 </div>
               </div>
               <div className="info-card">
-                <span className="info-icon">🎓</span>
+                <span className="info-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                </span>
                 <div>
                   <p className="info-label">Education</p>
                   <p className="info-value">Informatics Engineering</p>
                 </div>
               </div>
               <div className="info-card">
-                <span className="info-icon">💼</span>
+                <span className="info-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                </span>
                 <div>
                   <p className="info-label">Status</p>
                   <p className="info-value info-available">Open to Work</p>

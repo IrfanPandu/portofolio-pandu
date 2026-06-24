@@ -55,11 +55,6 @@ export default function Hero() {
       <div className="container hero-container">
         {/* Left Content */}
         <div className="hero-content">
-          <div className="hero-badge">
-            <span className="badge-dot"></span>
-            Available for work
-          </div>
-
           <h1 className="hero-title">
             Hi, I'm <span className="highlight">Irfan Pandu</span>
             <br />
@@ -108,25 +103,29 @@ export default function Hero() {
 
         {/* Right - Avatar / Visual */}
         <div className="hero-visual">
-          <div className="avatar-wrapper">
-            <div className="avatar-ring ring-1"></div>
-            <div className="avatar-ring ring-2"></div>
-            <div className="avatar-circle">
-              <div className="avatar-emoji">👨‍💻</div>
+          <div className="hero-terminal">
+            <div className="terminal-header">
+              <div className="terminal-dots">
+                <span className="terminal-dot red"></span>
+                <span className="terminal-dot yellow"></span>
+                <span className="terminal-dot green"></span>
+              </div>
+              <div className="terminal-title">developer.ts</div>
             </div>
-
-            {/* Floating Tech Badges */}
-            <div className="tech-badge badge-react">
-              <span>⚛️</span> React
-            </div>
-            <div className="tech-badge badge-node">
-              <span>🟢</span> Node.js
-            </div>
-            <div className="tech-badge badge-ts">
-              <span>💙</span> TypeScript
-            </div>
-            <div className="tech-badge badge-figma">
-              <span>🎨</span> Figma
+            <div className="terminal-body">
+              <pre>
+                <code>
+                  <span className="code-keyword">const</span> developer = &#123;<br />
+                  &nbsp;&nbsp;name: <span className="code-string">'Irfan Pandu'</span>,<br />
+                  &nbsp;&nbsp;title: <span className="code-string">'Fullstack Developer'</span>,<br />
+                  &nbsp;&nbsp;skills: [<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;<span className="code-string">'React'</span>, <span className="code-string">'Node.js'</span>,<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;<span className="code-string">'TypeScript'</span>, <span className="code-string">'PostgreSQL'</span><br />
+                  &nbsp;&nbsp;],<br />
+                  &nbsp;&nbsp;status: <span className="code-string">'Open to Work'</span><br />
+                  &#125;;
+                </code>
+              </pre>
             </div>
           </div>
 

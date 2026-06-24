@@ -14,9 +14,7 @@ export default function Footer() {
         <div className="container footer-top-inner">
           <div className="footer-brand">
             <a href="#home" className="footer-logo" onClick={(e) => handleScroll(e, '#home')}>
-              <span className="logo-bracket">&lt;</span>
-              <span className="logo-name">Irfan Pandu</span>
-              <span className="logo-bracket">/&gt;</span>
+              irfanpandu<span className="logo-dot">.</span>
             </a>
             <p className="footer-tagline">
               Building beautiful web experiences, one component at a time.
