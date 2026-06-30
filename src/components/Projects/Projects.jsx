@@ -3,98 +3,43 @@ import './Projects.css';
 
 const projects = [
   {
-    title: 'E-Commerce Platform',
-    desc: 'A full-featured online shopping platform with cart, checkout, payment integration, and admin dashboard.',
-    tags: ['React', 'Node.js', 'PostgreSQL', 'Stripe'],
-    github: 'https://github.com',
-    demo: 'https://demo.com',
+    title: 'TravelBook',
+    desc: 'A comprehensive travel booking and itinerary planning website that allows users to discover destinations, book accommodations, and manage their trips.',
+    tags: ['React', 'Node.js', 'Express', 'MongoDB', 'Tailwind CSS'],
+    github: 'https://github.com/IrfanPandu/travelbook',
+    demo: 'https://travelbook-demo.vercel.app',
   },
   {
-    title: 'Task Management App',
-    desc: 'Collaborative project management tool with real-time updates, drag-and-drop boards, and team chat.',
-    tags: ['React', 'TypeScript', 'Socket.io', 'MongoDB'],
-    github: 'https://github.com',
-    demo: 'https://demo.com',
+    title: 'Finance Flow',
+    desc: 'A modern personal finance and expense tracking application with detailed reports, budgeting tools, and interactive data visualization.',
+    tags: ['React', 'Chart.js', 'Firebase', 'CSS Grid'],
+    github: 'https://github.com/IrfanPandu/finance-flow',
+    demo: 'https://finance-flow-demo.vercel.app',
   },
   {
-    title: 'AI Chat Interface',
-    desc: 'Beautiful chat UI that integrates with OpenAI API, supports markdown rendering and code highlighting.',
-    tags: ['Next.js', 'OpenAI', 'Tailwind', 'Vercel'],
-    github: 'https://github.com',
-    demo: 'https://demo.com',
-  },
-  {
-    title: 'Portfolio Website',
-    desc: 'Personal portfolio with smooth animations, dark mode, and responsive design built with React.',
-    tags: ['React', 'CSS3', 'Vite'],
-    github: 'https://github.com',
-    demo: 'https://demo.com',
-  },
-  {
-    title: 'Weather Dashboard',
-    desc: 'Real-time weather app with geolocation, 7-day forecast, and interactive charts.',
-    tags: ['React', 'Chart.js', 'OpenWeather API'],
-    github: 'https://github.com',
-    demo: 'https://demo.com',
-  },
-  {
-    title: 'Blog CMS',
-    desc: 'Headless CMS-powered blog with markdown support, SEO optimization, and comment system.',
-    tags: ['Next.js', 'MDX', 'Contentful', 'TypeScript'],
-    github: 'https://github.com',
-    demo: 'https://demo.com',
+    title: 'Project Title',
+    desc: 'Project description goes here. Describe the features, technology stack, and purpose of your project.',
+    tags: ['React', 'CSS', 'JavaScript'],
+    github: '#',
+    demo: '#',
   },
 ];
 
 function getProjectIcon(title) {
   switch (title) {
-    case 'E-Commerce Platform':
+    case 'Finance Flow':
       return (
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
-          <circle cx="9" cy="21" r="1" />
-          <circle cx="20" cy="21" r="1" />
-          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+          <line x1="12" y1="1" x2="12" y2="23" />
+          <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
         </svg>
       );
-    case 'Task Management App':
+    case 'TravelBook':
       return (
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
-          <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
-          <path d="M9 14h6" />
-          <path d="M9 18h6" />
-          <path d="M9 10h6" />
-        </svg>
-      );
-    case 'AI Chat Interface':
-      return (
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
-          <path d="M8 10h8" />
-          <path d="M8 14h6" />
-        </svg>
-      );
-    case 'Portfolio Website':
-      return (
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
-          <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
-          <line x1="8" y1="21" x2="16" y2="21" />
-          <line x1="12" y1="17" x2="12" y2="21" />
-        </svg>
-      );
-    case 'Weather Dashboard':
-      return (
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M19 16.9A5 5 0 0 0 18 7h-1.26a8 8 0 1 0-11.62 8.58M12 13v8" />
-        </svg>
-      );
-    case 'Blog CMS':
-      return (
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-          <polyline points="14 2 14 8 20 8" />
-          <line x1="16" y1="13" x2="8" y2="13" />
-          <line x1="16" y1="17" x2="8" y2="17" />
+          <circle cx="12" cy="12" r="10" />
+          <line x1="2" y1="12" x2="22" y2="12" />
+          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
         </svg>
       );
     default:
