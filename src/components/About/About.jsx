@@ -26,7 +26,7 @@ export default function About() {
   const experiences = [
     {
       role: 'Informatics Engineering Student',
-      company: 'Universitas',
+      company: 'Politeknik Negeri Malang',
       period: '2024 – Present',
       desc: 'Pursuing a degree in Informatics Engineering with a focus on software engineering, data structures, and web development. Actively building side projects to apply academic knowledge in real-world scenarios.',
       color: '#22c55e',
@@ -34,7 +34,7 @@ export default function About() {
     {
       role: 'Freelance Fullstack Developer',
       company: 'Self-employed',
-      period: '2023 – Present',
+      period: '2023 – 2026',
       desc: 'Delivered multiple web projects for local businesses and individual clients — including business landing pages, product catalog systems, and interactive dashboards. Responsible for end-to-end development from UI design to backend API and deployment.',
       color: '#6366f1',
     },
