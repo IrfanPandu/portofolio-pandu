@@ -25,18 +25,25 @@ export default function About() {
 
   const experiences = [
     {
-      role: 'Network Engineering',
-      company: 'SMKN 1 Kediri',
-      period: '2021 – 2024',
-      desc: 'I studied at SMKN 1 Kediri majoring in computer network engineering ',
-      color: '#3aadf9ff',
+      role: 'Informatics Engineering Student',
+      company: 'Universitas',
+      period: '2024 – Present',
+      desc: 'Pursuing a degree in Informatics Engineering with a focus on software engineering, data structures, and web development. Actively building side projects to apply academic knowledge in real-world scenarios.',
+      color: '#22c55e',
     },
     {
-      role: 'Fullstack Developer',
-      company: 'Freelance',
+      role: 'Freelance Fullstack Developer',
+      company: 'Self-employed',
       period: '2023 – Present',
-      desc: 'I have experience in a freelance fullstack developer',
+      desc: 'Delivered multiple web projects for local businesses and individual clients — including business landing pages, product catalog systems, and interactive dashboards. Responsible for end-to-end development from UI design to backend API and deployment.',
       color: '#6366f1',
+    },
+    {
+      role: 'Network Engineering Graduate',
+      company: 'SMKN 1 Kediri',
+      period: '2021 – 2024',
+      desc: 'Graduated from vocational high school majoring in Computer Network Engineering. Built a strong technical foundation in networking, Linux administration, and system troubleshooting — skills that directly support backend and infrastructure work.',
+      color: '#3aadf9ff',
     },
   ];
 
@@ -95,13 +102,16 @@ export default function About() {
             <div className="about-bio reveal">
               <h3>Who I Am</h3>
               <p>
-                I'm <strong>Irfan Pandu</strong>, a fullstack developer with 2 years of experience turning complex problems
-                into elegant, user-friendly solutions. I specialize in building modern web applications with React,
-                TypeScript, and thoughtful UI design.
+                I'm <strong>Irfan Pandu</strong>, a fullstack developer from Malang who specializes in
+                building modern, performant web applications — from pixel-perfect UIs to scalable REST APIs.
+                My stack of choice is <strong>React</strong>, <strong>Node.js</strong>, and <strong>PostgreSQL</strong>,
+                and I'm comfortable across the entire development lifecycle.
               </p>
               <p>
-                Beyond code, I'm passionate about open-source, design systems, and developer experience. I believe
-                great software is built at the intersection of engineering and empathy.
+                I started freelancing in 2023 while still in school, delivering real products for real clients.
+                That experience taught me how to communicate with non-technical stakeholders, manage scope, and ship
+                on deadline — skills that go beyond just writing code. I care deeply about clean architecture,
+                developer experience, and building things that users actually enjoy.
               </p>
               <a
                 href={resumePdf}

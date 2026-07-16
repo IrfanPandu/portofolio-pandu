@@ -16,17 +16,17 @@ const contactInfo = [
   },
   {
     label: 'LinkedIn',
-    value: 'linkedin.com/in/Irfan Pandu Pratama',
+    value: 'linkedin.com/in/irfan-pandu-pratama',
     href: 'https://www.linkedin.com/in/irfan-pandu-pratama/',
   },
   {
     label: 'GitHub',
-    value: 'github.com/irfanPandu',
+    value: 'github.com/IrfanPandu',
     href: 'https://github.com/IrfanPandu',
   },
   {
     label: 'Location',
-    value: 'Malang, East Java',
+    value: 'Malang, East Java — Remote Friendly',
     href: null,
   },
 ];
