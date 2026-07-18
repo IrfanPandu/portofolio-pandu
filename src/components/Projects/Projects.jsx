@@ -4,8 +4,8 @@ import './Projects.css';
 const projects = [
   {
     title: 'TravelBook',
-    type: 'Personal',
-    typeColor: '#6366f1',
+    type: 'Freelance',
+    typeColor: '#f59e0b',
     desc: 'A full-featured travel booking and itinerary management platform. Users can discover destinations, search accommodations, and manage personalized trip plans in one seamless interface.',
     highlights: [
       'JWT-based auth with role management',
@@ -20,8 +20,8 @@ const projects = [
   },
   {
     title: 'Finance Flow',
-    type: 'Personal',
-    typeColor: '#6366f1',
+    type: 'Freelance',
+    typeColor: '#f59e0b',
     desc: 'A modern personal finance tracker with interactive data visualization, monthly budgeting tools, and category-based expense reporting. Built to help users build better financial habits.',
     highlights: [
       'Interactive Chart.js dashboards with real-time updates',
