@@ -6,7 +6,7 @@ const projects = [
     title: 'ToDoList',
     type: 'Freelance',
     typeColor: '#f59e0b',
-    desc: 'A full-featured travel booking and itinerary management platform. Users can discover destinations, search accommodations, and manage personalized trip plans in one seamless interface.',
+    desc: 'A sleek, intuitive task management app built with Laravel and PostgreSQL that streamlines daily productivity through seamless task tracking and smart organization.',
     highlights: [
       'JWT-based auth with role management',
       'Dynamic itinerary builder with drag-and-drop',
