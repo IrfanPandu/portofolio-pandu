@@ -3,7 +3,7 @@ import './Projects.css';
 
 const projects = [
   {
-    title: 'TravelBook',
+    title: 'ToDoList',
     type: 'Freelance',
     typeColor: '#f59e0b',
     desc: 'A full-featured travel booking and itinerary management platform. Users can discover destinations, search accommodations, and manage personalized trip plans in one seamless interface.',
@@ -13,8 +13,8 @@ const projects = [
       'MongoDB Atlas for flexible destination data',
     ],
     tags: ['React', 'Node.js', 'Express', 'MongoDB', 'Tailwind CSS'],
-    github: 'https://github.com/IrfanPandu/travelbook',
-    demo: 'https://travelbook-demo.vercel.app',
+    github: 'https://github.com/IrfanPandu/toDoList',
+    demo: 'https://to-do-list-irfanpandus-projects.vercel.app/',
     demoLabel: 'Live Demo',
     githubLabel: 'View Code',
   },
